@@ -72,6 +72,29 @@ public class Quiz8958 {
 		for (int i = 0 ; i<sumList.length ; i++) {
 			System.out.println(sumList[i]);
 		}
+		
+		/* 다른 풀이
+		 * 받은 문자열을 순차적으로 하나씩 비교하는 방법
+		 * 
+		 * Scanner sc = new Scanner(System.in);
+		 * int sum=0;
+		 * String q06_1=sc.nextLine();
+		 * int[] q06_2 = new int[q06_1.length()];
+		 * if(q06_1.charAt(0)=='O') {
+ 		 * 	q06_2[0]=1;
+		 * }
+		 * sum+=q06_2[0];
+		 * for(int i = 1 ; i<q06_1.length();i++) {
+		 * 	if(q06_1.charAt(i)=='O') {
+		 * 		q06_2[i]=q06_2[i-1]+1;
+		 * 	}
+		 *	sum+=q06_2[i];
+		 * }
+		 * System.out.println(sum);
+		 * sc.close();
+		 * 
+		 */
+		
 
 	}
 
