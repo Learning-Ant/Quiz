@@ -24,26 +24,28 @@ public class Quiz10172 {
 		BufferedWriter bw1 = new BufferedWriter(new FileWriter(file));
 		
 		bw1.write("|\\_/|\r\n" + 
-				"|q p|   /}\r\n" + 
-				"( 0 )\"\"\"\\\r\n" + 
-				"|\"^\"`    |\r\n" + 
-				"||_/=\\\\__|");
+				  "|q p|   /}\r\n" + 
+				  "( 0 )\"\"\"\\\r\n" + 
+				  "|\"^\"`    |\r\n" + 
+				  "||_/=\\\\__|");
 		BufferedReader br = new BufferedReader(new FileReader(file));
+		System.out.println(file.toPath());
 		
 		BufferedWriter bw2 = new BufferedWriter(new OutputStreamWriter(System.out));
-		StringBuilder sb = new StringBuilder();
-		sb.trimToSize();
+		StringBuffer sb = new StringBuffer();
 		
 		while(true) {
 			char[] cbuf = new char[10];
 			int state = br.read(cbuf);
 			if(state==-1) {
 				break;
+			} else {
+				sb.append(cbuf);
 			}
-			sb.append(cbuf);
 		}
+		sb.append("asdf");
 		
-		bw2.write(sb.toString());
+		System.out.println(sb);
 		if(file.exists()) {
 			System.out.println(file.getName());
 			file.delete();
