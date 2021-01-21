@@ -20,7 +20,7 @@ public class Quiz10172 {
 		 * 만든 파일의 내용을 읽어와 콘솔에 출력하는 방법으로 풀어본다.
 		 */
 		String path = Paths.get("").toAbsolutePath().toString();
-		File file = new File(path+"/Quiz10172.txt");
+		File file = new File(path,"Quiz10172.txt");
 		BufferedWriter bw1 = new BufferedWriter(new FileWriter(file));
 		
 		bw1.write("|\\_/|\r\n" + 

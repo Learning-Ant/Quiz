@@ -37,6 +37,7 @@ public class Quiz4673 {
 	 * 이렇게 한 후 내가 원하는 범위값+1의 길이를 가지는 boolean타입 배열을 생성한다.
 	 * 범위값에 +1을 해주는 이유는 인덱스와 셀프넘버를 맞춰주기 위함이다. 
 	 */
+	// 11652KB	112ms
 	public static void d(int n, boolean[] isNotSelfNum) {
 		if(n==0||n>isNotSelfNum.length) return;
 		int result = n;
