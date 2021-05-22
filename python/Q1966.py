@@ -32,14 +32,11 @@ for _ in range(tc):
     for i in range(count):
         q.append((priority[i], i))
 
-    print(q)
     cnt = 0
     while q:
         popped = q.pop(0)
-        print(popped)
         if popped[0] == max(priority):
             cnt += 1
-
             if popped[1] == n:
                 answer.append(cnt)
                 break
