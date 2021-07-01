@@ -45,3 +45,8 @@ B = np.random.randint(1, 10, size=(4, 2))
 B.transpose()
 C = A.dot(B.transpose())
 print(C)
+count = 3
+for i in range(10):
+    count = (count-1) % 4
+    print(count)
+print(-5 % 4)
