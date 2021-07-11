@@ -2,12 +2,14 @@
 import sys
 from collections import deque
 
+
 def dfs(start, visited, graph):
     visited += [start]
     for i in range(len(graph[start])):
         if graph[start][i] == 1 and (i not in visited):
             dfs(i, visited, graph)
     return visited
+
 
 def bfs(start, graph):
     queue = deque([start])
