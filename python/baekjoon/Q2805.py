@@ -1,28 +1,24 @@
+'''
+145836 KB	4864 ms
+'''
+
 import sys
 input = sys.stdin.readline
 
 n, m = map(int, input().split())
-# 5, 20
 
 tl = sorted(list(map(int, input().split())))
-# 4 26 40 42 46
 
-iniH, finH = tl[0], tl[-1]
-print(iniH, finH)
+iniH, finH = 0, tl[-1]
 resultH = finH
-print(resultH)
 diffsum = 0
 
-# while diffsum != m:
-if diffsum > m:
-    iniH = (iniH + finH) // 2
-    resultH = iniH
-elif diffsum < m:
-    finH = (iniH + finH) // 2
-    resultH = finH
-
-diffsum = sum(list(map(lambda x: x - resultH if x >= resultH else 0, tl)))
-print(diffsum)
+while iniH <= finH:
+    midH = (iniH + finH) // 2
+    diffsum = sum(list(map(lambda x: x - midH if x >= midH else 0, tl)))
+    if diffsum >= m:
+        iniH = midH + 1
+        resultH = midH
+    elif diffsum < m:
+        finH = midH - 1
 print(resultH)
-
-# print(resultH)
