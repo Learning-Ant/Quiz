@@ -14,6 +14,8 @@ field = [[1 if i == 'B' else 0 for i in input()] for _ in range(m)]
 그 중 가장 작은 경우의 chainging count 출력
 2. 
 먼저 정답 체스판을 생성해 둔 후 바꿔야 하는 횟수 counting
+
+여기서 checking function을 따로 제작하느냐 마느냐.
 '''
 
 count = 0
@@ -27,4 +29,4 @@ for curM in range(m-8):
                 if flag:
                     if j % 2 == 0 and first != field[curM+i][curN+j]:
                         count += 1
-                   # elif
+                    elif j
