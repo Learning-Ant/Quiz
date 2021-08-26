@@ -7,7 +7,6 @@ import sys
 
 sys.setrecursionlimit(10**6)
 
-
 def dfs(field, x, y, r, c):
     if x <= -1 or x >= r or y <= -1 or y >= c or field[x][y] != 1:
         return False
