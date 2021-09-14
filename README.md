@@ -1,2 +1,2 @@
 # Quiz
-This repository was created for solving various kinds of java quizzes.
+This repository was created for solving various kinds of java/python/C quizzes.
