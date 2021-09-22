@@ -26,4 +26,7 @@ for i in range(1, lenB + 1):
     # for k in dp:
     #   print(k)
 
+for i in dp:
+  print(i)
+
 print(dp[lenB][lenA])
